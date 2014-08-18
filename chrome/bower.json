@@ -1,0 +1,20 @@
+{
+  "name": "chrome",
+  "version": "0.9.3-beta",
+  "homepage": "https://github.com/WeCanWeUp/POSTMAN-Node-Webkit",
+  "authors": [
+    "zheng ye <barrysfinalhome@outlook.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "~3.2.0",
+    "angularjs": "~1.2.22"
+  }
+}

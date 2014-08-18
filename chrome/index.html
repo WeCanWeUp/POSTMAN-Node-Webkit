@@ -5,6 +5,7 @@
     <title>Postman</title>
     <link rel="stylesheet" type="text/css" href="css/custom-theme/jquery-ui-1.9.2.custom.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/> -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap-modal.css"/>
     <link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css"/>
     <link rel="stylesheet" type="text/css" href="codemirror/lib/codemirror.css"/>
@@ -15,13 +16,13 @@
 <body>
 <div id="container" class="clearfix">
 <div id="sidebar-footer">
-    <a id="upgrade" 
+    <a id="upgrade"
         rel="popover"
         data-trigger="hover"
-        data-placement="top" 
-        data-content="You are using the legacy version of Postman. Postman v0.9 let's you write tests, run entire collections and do a lot more. And yes, it can use cookies too!" 
+        data-placement="top"
+        data-content="You are using the legacy version of Postman. Postman v0.9 let's you write tests, run entire collections and do a lot more. And yes, it can use cookies too!"
         data-original-title="Upgrade Postman"
-        target="_blank" 
+        target="_blank"
         href="http://www.getpostman.com/link/legacy_jetpacks_blog">Automated API tests using Postman</a>
     <a id="donate" href="http://www.getpostman.com/supporters" target="_blank">Supporters</a>
 </div>
@@ -1255,8 +1256,6 @@
         </table>
     </div>
 </div>
-<script type="text/javascript" src="js/google-analytics-bundle.js"></script>
-<script type="text/javascript" src="js/ga.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/underscore-min.js"></script>
 <script type="text/javascript" src="js/jsonlint.js"></script>
@@ -1293,5 +1292,17 @@
 <script type="text/javascript" src="js/handlebars.js"></script>
 <script type="text/javascript" src="js/templates.js"></script>
 <script type="text/javascript" src="js/requester.js"></script>
+
+<script type="text/javascript" src="bower_components/angularjs/angular.js"></script>
+<script>
+  var gulp = require('gulp');
+  gulp.task('reload', function () {
+    if (window.location) {
+      window.location.reload();
+    }
+  });
+
+  // gulp.watch('**/*', ['reload']);
+</script>
 </body>
 </html>
